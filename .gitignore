@@ -1,0 +1,77 @@
+# Este gitignore contém apenas entradas relacionadas ao projeto. Os desenvolvedores são encorajados
+# a criarem entradas globais de gitignores nas suas estações de acordo com o ambiente que usam
+# (SO, IDE etc.).
+#
+# Veja https://github.com/github/gitignore/tree/master/Global (em especial o README.md) para mais
+# informações e sugestões.
+# =================================================================================================
+
+# ================================================
+# Arquivos gerados pelo SIGEO 3 e suas ferramentas
+# ================================================
+
+build/
+builds/
+binaries/
+.pmake_all_status/
+
+# Pastas de lixo e arquivo temporario
+lixo
+*.old
+*.swp
+*.orig
+*.tcl
+*.cxx_parameters
+*.cmake
+*plugin_info
+*_test
+*_depends
+# Qt Creator:
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# ====================================
+# https://github.com/github/gitignore/
+# ====================================
+
+# C.gitignore
+# -----------
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Temporary
+*~
+
+
+# CMake.gitignore
+# ---------------
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CMakeLists.txt.user*
+
+# Qt.gitignore (adaptado)
+# -----------------------
+# Arquivos gerados pelo MOC e outras ferramentas do Qt
+moc_*.cpp
+qrc_*.cpp
+
+# Arquivos gerados pelo Dolphin
+.directory
