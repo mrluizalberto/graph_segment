@@ -15,6 +15,23 @@ RGB color volume manipulation functions
 using namespace std;
 
 
+static int geoeas2rgb(string fileName)
+{
+    std::ifstream file(fileName);
+
+    if (file.is_open())
+    {
+        string dummyLine;
+        getline(file, dummyLine);
+
+        // get volume dimensions
+        file >> foo >> sizeX >> sizeY >> sizeZ;
+
+        // get maximum and minimum values, excluding null values
+    }
+
+}
+
 static image<rgb> *loadRGBVolume(const char *name) {
 
   std::ifstream file(name);

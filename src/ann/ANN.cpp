@@ -27,8 +27,8 @@
 //----------------------------------------------------------------------
 
 #include <cstdlib>						// C standard lib defs
-#include <ANN/ANNx.h>					// all ANN includes
-#include <ANN/ANNperf.h>				// ANN performance 
+#include <ANN/ANNx.h>				// all ANN includes
+#include <ANN/ANNperf.h>				// ANN performance
 
 using namespace std;					// make std:: accessible
 

@@ -26,18 +26,9 @@
 #include "rgb_volume.h"
 #include "segment-image.h"
 
-
-int main(int argc, char **argv) {
-  if (argc != 6) {
-    fprintf(stderr, "usage: %s sigma k min input(ppm) output(ppm)\n", argv[0]);
-    return 1;
-  }
-  
-  float sigma = smooth_fact;
-  float k = atof(argv[2]);
-  int min_size = atoi(argv[3]);
-
-  image<rgb> *input = loadRGBVolume(argv[4]);
+int segment(float sigma, float k, int min_size, char * img_file)
+{
+  image<rgb> *input = loadRGBVolume(img_file);
 	
   printf("processing\n");
   int num_ccs; 
